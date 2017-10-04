@@ -1,10 +1,9 @@
 describe "Not having any errors and being all green" do
 
   context 'NameError' do
-    it 'raises a NameError when encountering undefined barewords' 
+    it 'raises a NameError when encountering undefined barewords' do
       expect{
-        "hello world"
-        Hello world
+        "hello_world"
         load './lib/a_name_error.rb'
       }.to_not raise_error
     end
